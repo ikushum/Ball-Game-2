@@ -206,7 +206,7 @@ while not gameExit:
                 gameDisplay=pygame.display.set_mode((800,580),pygame.FULLSCREEN)
                 gameDisplay.fill(white)
             elif event.key==pygame.K_p:
-                pause=True
+                pause()
             elif event.key==pygame.K_ESCAPE:
                 startGame=False
             elif event.key==pygame.K_m:
@@ -216,25 +216,6 @@ while not gameExit:
 
 
 
-
-
-     #--------------------------to pause the game---------------------------|
-    while pause==True:
-        font=pygame.font.SysFont("forte",100)
-        text=font.render("Paused",True, black)
-        gameDisplay.blit(text,(250,150))
-        font=pygame.font.SysFont("forte",50)
-        text=font.render("Press C to continue ",True, black)
-        gameDisplay.blit(text,(220,240))
-        pygame.display.update()
-        
-        for event in pygame.event.get():
-             if event.key==pygame.K_c:
-                 pause=False
-
-
-
-                
 
    
     #---------------for player movements--------------------------|                      
@@ -585,6 +566,23 @@ while not gameExit:
 
 #-------------to define game speed---------------------------------------|
     clock.tick(tick)
+
+
+     #--------------------------to pause the game---------------------------|
+    def pause():
+        pause=True
+        while pause==True:
+            font=pygame.font.SysFont("forte",100)
+            text=font.render("Paused",True, black)
+            gameDisplay.blit(text,(250,150))
+            font=pygame.font.SysFont("forte",50)
+            text=font.render("Press C to continue ",True, black)
+            gameDisplay.blit(text,(220,240))
+            pygame.display.update()
+            
+            for event in pygame.event.get():
+                 if event.key==pygame.K_c:
+                     pause=False
     
 
 
@@ -594,6 +592,9 @@ while not gameExit:
 
 pygame.quit()
 quit()
+
+
+
 
 
 
