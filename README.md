@@ -4,7 +4,7 @@ This is the second version of the ball game(the first version was developed in 2
 
 To run this game you will need the following things properly installed on your computer :
 
-1) Pythonj 2.7
+1) Python 2.7
 
-2) Pygane 1.9.1
+2) Pygame 1.9.1
 
