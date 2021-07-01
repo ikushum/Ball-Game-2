@@ -8,3 +8,6 @@ To run this game you will need the following things properly installed on your c
 
 2) Pygame 1.9.1
 
+## Download
+
+[Click here](https://drive.google.com/file/d/0BzJ7MMEdeBSaWk1pb0VTZk92S1U/view?fbclid=IwAR30qGZP70HDZG_5SNHBZUEG8-XM0gynUZW_kqnVAdHR4Yb-tP-4NsX8wkY&resourcekey=0-AdJowZkatXVTZ1hbxwF7vA) to download this game for **windows**
